@@ -44,11 +44,13 @@ body {
     /* border: 5px solid rgb(255, 0, 0); */
     display: flex;
     justify-content: center;
+    height: 100%;
 }
 
 .mainContent {
     /* border: 5px solid black; */
     max-width: 1500px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -62,6 +64,78 @@ body {
     width: 1500px;
 }
 
+.mainInfo2{
+    /* border: 5px solid blue; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    width: 1500px;
+}
+
+.favGear{
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    height: 600px;
+    /* border: 3px solid red; */
+}
+
+.formContent{
+    /* border: 5px solid rgb(99, 0, 212); */
+    height: 600px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.formContainer2{
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: space-between;
+    /* border: 5px solid rgb(6, 203, 218); */
+    height: 400px;
+}
+
+.formInput{
+    width: 100%;
+    height: 25px;
+}
+
+.checkbox {
+    height: 20px;
+    width: 30px;
+}
+
+.radioButton{
+    height: 20px;
+    width: 30px;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+}
+
+.formInput2{
+    width: 100%;
+    height: 100px;
+}
+
+label {
+    font-size: 30px;
+}
+
+.formQuestion{
+    font-size: 30px;
+}
+
+.formSelect{
+    display: flex;
+    justify-content: space-evenly;
+}
+
 p {
     font-size: 20px;
 }
@@ -70,12 +144,19 @@ p {
     font-size: 25px;
 }
 
-.gear2Transform{
-    /* border: 5px solid purple; */
-    max-width: 600px;
+.attackLinks2{
+    font-size: 30px;
 }
 
-.gear2attacks{
+.gearTransform{
+    /* border: 5px solid purple; */
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gearAttacks{
     /* border: 5px solid rgb(0, 225, 255); */
     max-width: 600px;
     display: flex;
@@ -83,17 +164,22 @@ p {
     align-items: center;
 }
 
-#gear2pic1{
+#gearLeftPic{
     width: 600px;
     height: auto;
 }
 
-#gear2pic2{
+#gearLeftPic2{
     width: 600px;
     height: 400px;
 }
 
-#gear2pic3{
+#gearRightPic{
+    width: 600px;
+    height: 400px;
+}
+
+#gearBotPic{
     padding: 50px 0 125px 0;
     width: 1320px;
     height: auto;
@@ -101,10 +187,10 @@ p {
 
 h1, h2 {
     font-family: Verdana;
-    color: yellow;
+    color: rgb(212, 53, 53);
     text-shadow:
-    -1px -1px 2px #000,
-    1px -1px 2px #000,
-    -1px 1px 2px #000,
-    1px 1px 2px #000;
+    -1px -1px 1px #000,
+    1px -1px 1px #000,
+    -1px 1px 1px #000,
+    1px 1px 1px #000;
 }

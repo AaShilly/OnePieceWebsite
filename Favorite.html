@@ -15,94 +15,104 @@
     <div class="navContainer">
         <nav>
             <ul class="navBar">
-                <li><a class="navLinks" href="\\wsl.localhost\Ubuntu\home\ashilly\aa-projects\OnePieceWebsite\Gear2.html">Gear 2</a></li>
-                <li><a class="navLinks" href="\\wsl.localhost\Ubuntu\home\ashilly\aa-projects\OnePieceWebsite\Gear3.html">Gear 3</a></li>
-                <li><a class="navLinks" href="\\wsl.localhost\Ubuntu\home\ashilly\aa-projects\OnePieceWebsite\Gear4.html">Gear 4</a></li>
-                <li><a class="navLinks" href="\\wsl.localhost\Ubuntu\home\ashilly\aa-projects\OnePieceWebsite\Gear5.html">Gear 5</a></li>
-                <li><a class="navLinks" href="\\wsl.localhost\Ubuntu\home\ashilly\aa-projects\OnePieceWebsite\Favorite.html">Favorite</a>
+                <li><a class="navLinks"
+                        href="\\wsl.localhost\Ubuntu\home\ashilly\aa-projects\OnePieceWebsite\Gear2.html">Gear 2</a>
+                </li>
+                <li><a class="navLinks"
+                        href="\\wsl.localhost\Ubuntu\home\ashilly\aa-projects\OnePieceWebsite\Gear3.html">Gear 3</a>
+                </li>
+                <li><a class="navLinks"
+                        href="\\wsl.localhost\Ubuntu\home\ashilly\aa-projects\OnePieceWebsite\Gear4.html">Gear 4</a>
+                </li>
+                <li><a class="navLinks"
+                        href="\\wsl.localhost\Ubuntu\home\ashilly\aa-projects\OnePieceWebsite\Gear5.html">Gear 5</a>
+                </li>
+                <li><a class="navLinks"
+                        href="\\wsl.localhost\Ubuntu\home\ashilly\aa-projects\OnePieceWebsite\Favorite.html">Favorite</a>
+                </li>
             </ul>
         </nav>
     </div>
 
 
     <div class="mainContainer">
-
-        <a href="\\wsl.localhost\Ubuntu\home\ashilly\aa-projects\OnePieceWebsite\Favoritegearpic.jpg"
-            target="_blank"><img id="allGears"
-                src="\\wsl.localhost\Ubuntu\home\ashilly\aa-projects\OnePieceWebsite\Favoritegearpic.jpg"
-                alt="All Luffy Gears"></a>
-
-        <div class="mainTitle">
-            <h1>What is your FAVORITE GEAR?</h1>
-        </div>
-
         <div class="mainContent">
-            <form action="/form-handling-url" method="post">
-                <fieldset>
-                    <legend>Favorite Luffy Gear</legend>
 
-                    <div>
-                        <label for="firstName">First name:</label>
-                        <input type="text" id="firstName" name="first_name">
-                    </div>
+            <div class="mainTitle">
+                <h1>What is your FAVORITE GEAR?</h1>
+            </div>
 
-                    <div>
-                        <label for="lastName">Last name:</label>
-                        <input type="text" id="lastName" name="last_name">
-                    </div>
+            <div class="mainInfo2">
+                <form action="/form-handling-url" method="post">
+                    <fieldset class="favGear">
 
-                    <div>
-                        <label for="email">Email address:</label>
-                        <input type="email" id="email" name="email_address">
-                    </div>
+                        <div class="formContent">
+                            <div>
+                                <label class="labelText" for="firstName">First name:</label>
+                                <input class="formInput" type="text" id="firstName" name="first_name">
+                            </div>
 
-                    <div>
-                        <p>What is your favorite Gear?</p>
+                            <div>
+                                <label class="labelText" for="lastName">Last name:</label>
+                                <input class="formInput" type="text" id="lastName" name="last_name">
+                            </div>
 
-                        <div>
-                            <input type="radio" id="gear2" name="favgear" value="gear2">
-                            <label for="gear2">Gear 2</label>
+                            <div>
+                                <label class="labelText" for="email">Email address:</label>
+                                <input class="formInput" type="email" id="email" name="email_address">
+                            </div>
+
+
+                            <div class="formContainer2">
+                                <p class="formQuestion">Favorite Gear:</p>
+                                <div class="formSelect">
+                                    <div>
+                                        <input class="radioButton" type="radio" id="gear2" name="favgear" value="gear2">
+                                        <label for="gear2">Gear 2</label>
+                                    </div>
+
+                                    <div>
+                                        <input class="radioButton" type="radio" id="gear3" name="favgear" value="gear3">
+                                        <label for="gear3">Gear 3</label>
+                                    </div>
+
+                                    <div>
+                                        <input class="radioButton" type="radio" id="gear4" name="favgear" value="gear4">
+                                        <label for="gear4">Gear 4</label>
+                                    </div>
+
+                                    <div>
+                                        <input class="radioButton" type="radio" id="gear5" name="favgear" value="gear5">
+                                        <label for="gear5">Gear 5</label>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label for="comments">Comments:</label>
+                                    <textarea class="formInput2" id="comments" name="comments"></textarea>
+                                </div>
+
+                                <div>
+                                    <input class="checkbox" type="checkbox" id="newsletter" name="suscribe" checked>
+                                    <label for="newsletter">Sign up for One Piece newsletter</label>
+                                </div>
+
+                                <div>
+                                    <button type="submit">Submit</button>
+                                </div>
+                            </div>
+
                         </div>
+                    </fieldset>
+                </form>
 
-                        <div>
-                            <input type="radio" id="gear3" name="favgear" value="gear3">
-                            <label for="gear3">Gear 3</label>
-                        </div>
-
-                        <div>
-                            <input type="radio" id="gear4" name="favgear" value="gear4">
-                            <label for="gear4">Gear 4</label>
-                        </div>
-
-                        <div>
-                            <input type="radio" id="gear5" name="favgear" value="gear5">
-                            <label for="gear5">Gear 5</label>
-                        </div>
-                    </div>
-
-                    <div>
-                        <label for="comments">Comments:</label>
-                        <textarea id="comments" name="comments"></textarea>
-                    </div>
-
-                    <div>
-                        <input type="checkbox" id="newsletter" name="suscribe" checked>
-                        <label for="newsletter">Sign up for One Piece newsletter</label>
-                    </div>
-
-                    <div>
-                        <button type="submit">Submit</button>
-                    </div>
-
-                </fieldset>
-            </form>
-
+                <a href="\\wsl.localhost\Ubuntu\home\ashilly\aa-projects\OnePieceWebsite\Favoritegearpic.jpg"
+                    target="_blank"><img id="gearBotPic"
+                        src="\\wsl.localhost\Ubuntu\home\ashilly\aa-projects\OnePieceWebsite\Favoritegearpic.jpg"
+                        alt="All Luffy Gears"></a>
+            </div>
         </div>
-
-
-
     </div>
-
 </body>
 
 
